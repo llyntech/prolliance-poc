@@ -1,0 +1,5 @@
+###### Requirements with Version Specifiers ######
+pytest == 3.9.1             # Pytest 3.9.1
+selenium                    # Selenium Python binding
+allure-pytest == 2.5.4      # Allure for reporting
+sphinx                      # Python document lib
