@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('Unit Test') {
+    stage('Build') {
       steps {
         echo 'This stage is very important. For now, it will be bypassed'
       }
