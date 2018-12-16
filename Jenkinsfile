@@ -2,6 +2,9 @@ pipeline {
   agent any
   stages {
     stage('Build') {
+      environment {
+        TESTNFS = '/var/jenkins_home/testnfs/'
+      }
       steps {
         echo 'Copying test code to test server...'
         sh '''#! /bin/bash
