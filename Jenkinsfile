@@ -9,7 +9,7 @@ pipeline {
         echo 'Copying test code to test server...'
         sh '''#! /bin/bash
 
-cd TESTNFS
+cd $TESTNFS
 
 timestamp=date +%Y%m%d%H%M%S
 
