@@ -7,11 +7,11 @@ pipeline {
       }
       steps {
         echo 'Copying test code to test server...'
-        sh '''#! /bin/bash
+        sh '''#!/bin/bash
 
 cd $TESTNFS
 
-$timestamp = $(date +%Y%m%d%H%M%S)
+timestamp=$(date +%Y%m%d%H%M%S)
 
 mkdir $timestamp
 '''
