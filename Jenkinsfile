@@ -11,7 +11,7 @@ pipeline {
 
 cd $TESTNFS
 
-timestamp = $(date +%Y%m%d%H%M%S)
+$timestamp = $(date +%Y%m%d%H%M%S)
 
 mkdir $timestamp
 '''
