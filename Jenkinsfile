@@ -4,6 +4,7 @@ pipeline {
     stage('Build') {
       environment {
         TESTNFS = '/var/jenkins_home/testnfs/'
+        WORKSPACE = '/var/jenkins_home/workspace/'
       }
       steps {
         echo 'Copying test code to test server...'
@@ -15,7 +16,7 @@ timestamp=$(date +%Y%m%d%H%M%S)
 
 mkdir $timestamp
 
-cp ./testing/* $timestamp'''
+cp $WORKSPACE/testing/* $timestamp'''
       }
     }
   }
