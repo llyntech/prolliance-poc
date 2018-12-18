@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       environment {
-        TESTNFS = '/var/jenkins_home/testnfs/'
+        TESTNFS = '/var/jenkins_home/testing/'
         WORKSPACE = '/var/jenkins_home/workspace/prolliance-poc_master'
       }
       steps {
