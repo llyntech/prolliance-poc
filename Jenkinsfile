@@ -16,7 +16,7 @@ timestamp=$(date +%Y%m%d%H%M%S)
 
 mkdir $timestamp
 
-cp $WORKSPACE/testing/* $timestamp/'''
+cp -r $WORKSPACE/testing/* $timestamp/'''
       }
     }
   }
