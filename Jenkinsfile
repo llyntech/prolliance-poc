@@ -19,5 +19,11 @@ mkdir $timestamp
 cp -r $WORKSPACE/testing/* $timestamp/'''
       }
     }
+    stage('Test') {
+      steps {
+        echo 'Starting system validation...'
+        sh '#! /bin/bash'
+      }
+    }
   }
 }
