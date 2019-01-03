@@ -7,7 +7,7 @@ pipeline {
         WORKSPACE = '/var/jenkins_home/workspace/prolliance-poc_master'
       }
       steps {
-        echo 'Build step TBD...'
+        echo 'Build steps are TBD...'
         echo 'Copying test code to test server...'
         sh '''#!/bin/bash
 
