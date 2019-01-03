@@ -3,10 +3,11 @@ pipeline {
   stages {
     stage('Build') {
       environment {
-        TESTNFS = '/var/jenkins_home/testing/'
+        TESTNFS = '/var/jenkins_home/testnfs'
         WORKSPACE = '/var/jenkins_home/workspace/prolliance-poc_master'
       }
       steps {
+        echo 'Build step TBD...'
         echo 'Copying test code to test server...'
         sh '''#!/bin/bash
 
