@@ -25,7 +25,7 @@ export TESTBUILD=$timestamp
         echo 'Starting system validation...'
         sh '''#! /bin/bash
 
-ssh llyntech@10.0.0.68 #connect to test server
+ssh -t llyntech@10.0.0.68
 
 cd /home/llyntech/testing
 
