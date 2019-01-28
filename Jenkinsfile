@@ -23,18 +23,6 @@ export TESTBUILD=$timestamp
     stage('Test') {
       steps {
         echo 'Starting system validation...'
-        sh '''#! /bin/bash
-
-ssh -t llyntech@10.0.0.68
-
-cd /home/llyntech/testing
-
-cd $TESTBUILD/web_app_test/
-
-pytest --alluredir=./my_allure_results
-
-
-'''
       }
     }
   }
